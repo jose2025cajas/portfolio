@@ -1,0 +1,77 @@
+```html
+<header th:fragment="institutionalHeader"
+        class="border-b border-slate-200 bg-white text-slate-900">
+
+    <div class="mx-auto flex h-[60px] max-w-7xl items-center justify-between px-6 lg:px-8">
+
+        <!-- ========================================= -->
+        <!-- LOGO IESTP - IZQUIERDA -->
+        <!-- ========================================= -->
+
+        <div class="flex w-[180px] shrink-0 items-center justify-start">
+            <a href="https://institutocajas.edu.pe/" target="_blank" rel="noopener noreferrer">
+            <img
+                    th:src="@{/images/IESTP-cajas.png}"
+                    alt="Logo institucional"
+                    style="width: 120px !important;
+                           height: 60px !important;
+                           max-width: 140px !important;
+                           max-height: 80px !important;
+                           min-width: 0 !important;
+                           min-height: 0 !important;
+                           object-fit: contain;
+                           display: block;"
+            >
+            </a>
+        </div>
+
+
+        <!-- ========================================= -->
+        <!-- INFORMACIÓN - CENTRO -->
+        <!-- ========================================= -->
+
+        <div class="w-full text-center">
+
+            <div class="grid w-full grid-cols-1">
+
+                <div class="flex w-full justify-center">
+                    <p class="text-[11px] font-medium uppercase tracking-wider text-slate-500">
+                        Instituto de Educación Superior Tecnológico Público
+                    </p>
+                </div>
+
+                <div class="flex w-full justify-center">
+                    <p class="text-lg font-bold leading-tight text-slate-900">
+                        "Andrés Avelino Cáceres Dorregaray"
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- LOGO DPW - DERECHA -->
+        <!-- ========================================= -->
+
+        <div class="flex w-[180px] shrink-0 items-center justify-end">
+            <a href="https://institutocajas.edu.pe/diseno-y-programacion-web/" target="_blank" rel="noopener noreferrer">
+            <img
+                    th:src="@{/images/logo-DPW.png}"
+                    alt="Diseño y Programación"
+                    style="width: 115px !important;
+                           height: 55px !important;
+                           max-width: 140px !important;
+                           max-height: 80px !important;
+                           min-width: 0 !important;
+                           min-height: 0 !important;
+                           object-fit: contain;
+                           display: block;"
+            >
+            </a>
+        </div>
+
+    </div>
+
+</header>
+```

@@ -1,6 +1,4 @@
-```html
-<header th:fragment="institutionalHeader"
-        class="border-b border-slate-200 bg-white text-slate-900">
+<header class="border-b border-slate-200 bg-white text-slate-900">
 
     <div class="mx-auto flex h-[60px] max-w-7xl items-center justify-between px-6 lg:px-8">
 
@@ -74,4 +72,4 @@
     </div>
 
 </header>
-```
+

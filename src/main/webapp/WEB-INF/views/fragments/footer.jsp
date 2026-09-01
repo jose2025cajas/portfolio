@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="es"
-      xmlns:th="http://www.thymeleaf.org">
-
-<footer th:fragment="footer"
-        class="border-t border-slate-200 bg-white">
+<footer class="border-t border-slate-200 bg-white">
 
     <div class="mx-auto max-w-7xl px-6 py-8 text-center lg:px-8">
 
@@ -18,5 +13,3 @@
     </div>
 
 </footer>
-
-</html>

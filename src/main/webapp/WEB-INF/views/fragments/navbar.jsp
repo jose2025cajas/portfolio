@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="es"
-      xmlns:th="http://www.thymeleaf.org">
-<link rel="stylesheet" th:href="@{/css/app.css}">
-<nav th:fragment="navbar"
-     class="top-0 z-50 w-full border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
+<nav class="top-0 z-50 w-full border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
 
     <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
 
         <!-- Logo -->
-        <a href="/"
+        <a href="${pageContext.request.contextPath}/"
            class="flex items-center gap-3">
 
             <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-lg font-black text-slate-950">
@@ -27,17 +22,17 @@
 
         </a>
 
+
         <!-- Desktop Navigation -->
         <div class="hidden items-center gap-8 md:flex">
 
-            
-
-            <a href="/login"
+            <a href="${pageContext.request.contextPath}/login"
                class="rounded-full bg-white px-5 py-2.5 text-sm font-bold text-slate-950 transition hover:bg-slate-200">
                 Login
             </a>
 
         </div>
+
 
         <!-- Mobile button -->
         <button
@@ -51,10 +46,11 @@
                  stroke="currentColor"
                  viewBox="0 0 24 24">
 
-                <path stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h16M4 18h16"/>
+                <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"/>
 
             </svg>
 
@@ -62,40 +58,60 @@
 
     </div>
 
+
     <!-- Mobile menu -->
-    <div id="mobile-menu"
-         class="hidden border-t border-white/10 bg-slate-950 md:hidden">
+    <div
+            id="mobile-menu"
+            class="hidden border-t border-white/10 bg-slate-950 md:hidden">
 
         <div class="space-y-1 px-6 py-5">
 
-            <a href="/"
-               class="block rounded-lg px-4 py-3 text-sm text-slate-300 hover:bg-white/5 hover:text-white">
+            <a
+                    href="${pageContext.request.contextPath}/"
+                    class="block rounded-lg px-4 py-3 text-sm text-slate-300 hover:bg-white/5 hover:text-white">
+
                 Inicio
+
             </a>
 
-            <a href="#sobre-mi"
-               class="block rounded-lg px-4 py-3 text-sm text-slate-300 hover:bg-white/5 hover:text-white">
+            <a
+                    href="#sobre-mi"
+                    class="block rounded-lg px-4 py-3 text-sm text-slate-300 hover:bg-white/5 hover:text-white">
+
                 Sobre mí
+
             </a>
 
-            <a href="#habilidades"
-               class="block rounded-lg px-4 py-3 text-sm text-slate-300 hover:bg-white/5 hover:text-white">
+            <a
+                    href="#habilidades"
+                    class="block rounded-lg px-4 py-3 text-sm text-slate-300 hover:bg-white/5 hover:text-white">
+
                 Habilidades
+
             </a>
 
-            <a href="#proyectos"
-               class="block rounded-lg px-4 py-3 text-sm text-slate-300 hover:bg-white/5 hover:text-white">
+            <a
+                    href="#proyectos"
+                    class="block rounded-lg px-4 py-3 text-sm text-slate-300 hover:bg-white/5 hover:text-white">
+
                 Proyectos
+
             </a>
 
-            <a href="#experiencia"
-               class="block rounded-lg px-4 py-3 text-sm text-slate-300 hover:bg-white/5 hover:text-white">
+            <a
+                    href="#experiencia"
+                    class="block rounded-lg px-4 py-3 text-sm text-slate-300 hover:bg-white/5 hover:text-white">
+
                 Experiencia
+
             </a>
 
-            <a href="#contacto"
-               class="block rounded-lg px-4 py-3 text-sm font-bold text-white hover:bg-white/5">
+            <a
+                    href="#contacto"
+                    class="block rounded-lg px-4 py-3 text-sm font-bold text-white hover:bg-white/5">
+
                 Contacto
+
             </a>
 
         </div>
@@ -103,5 +119,3 @@
     </div>
 
 </nav>
-
-</html>
